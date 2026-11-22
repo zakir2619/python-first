@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Md. Zakir Hossain – Web Developer</title>
+<meta name="description" content="Portfolio of Md. Zakir Hossain, a web developer from Rajshahi, Bangladesh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+  :root {
+    --bg: #f5f6f8; --surface: #ffffff; --ink: #151a2d; --muted: #5b637a;
+    --line: #dfe2ea; --accent: #3b4bdb; --accent-ink: #ffffff;
+    color-scheme: light;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1220; --surface: #171b2e; --ink: #eef0f7; --muted: #9aa3bd;
+      --line: #272c45; --accent: #8c98ff; --accent-ink: #0f1220; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1220; --surface: #171b2e; --ink: #eef0f7; --muted: #9aa3bd;
+    --line: #272c45; --accent: #8c98ff; --accent-ink: #0f1220; color-scheme: dark;
+  }
+  html { scroll-behavior: smooth; scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 72px); }
+  body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', system-ui, sans-serif; line-height: 1.65; }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--bg); z-index: 10; }
+  .display { font-family: 'Bricolage Grotesque', 'DM Sans', system-ui, sans-serif; letter-spacing: -0.025em; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="sticky z-20 border-b" style="top: env(safe-area-inset-top, 0px); background: var(--bg); border-color: var(--line);">
+  <nav class="mx-auto flex max-w-5xl items-center justify-between px-5 py-4">
+    <a href="#top" class="display text-lg font-bold">Zakir Hossain</a>
+    <div class="flex items-center gap-5 text-sm" style="color: var(--muted);">
+      <a href="#about" class="hidden hover:text-[var(--ink)] sm:inline">About</a>
+      <a href="#work" class="hover:text-[var(--ink)]">Work</a>
+      <a href="#contact" class="hover:text-[var(--ink)]">Contact</a>
+      <button id="theme" type="button" aria-label="Switch light or dark theme" class="rounded-full border px-3 py-1 text-xs" style="border-color: var(--line); color: var(--ink);">Theme</button>
+    </div>
+  </nav>
+</header>
+
+<main id="top" class="mx-auto max-w-5xl px-5">
+
+  <!-- Hero -->
+  <section class="py-20 sm:py-28">
+    <p class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm" style="border-color: var(--line); background: var(--surface); color: var(--muted);">
+      <span class="h-2 w-2 rounded-full" style="background: #22c55e;"></span>
+      Open to new projects
+    </p>
+    <h1 class="display mt-6 text-5xl font-bold leading-[1.05] sm:text-7xl">
+      I’m Md. Zakir Hossain.<br>I build fast, clear websites.
+    </h1>
+    <p class="mt-6 max-w-xl text-lg" style="color: var(--muted);">
+      A web developer based in Rajshahi, Bangladesh. I design and build responsive sites and web apps that are easy to use and easy to maintain.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="#work" class="rounded-lg px-5 py-3 text-sm font-medium" style="background: var(--accent); color: var(--accent-ink);">See my work</a>
+      <a href="#contact" class="rounded-lg border px-5 py-3 text-sm font-medium" style="border-color: var(--line); background: var(--surface);">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="grid gap-8 border-t py-16 md:grid-cols-[1fr_2fr]" style="border-color: var(--line);">
+    <h2 class="display text-2xl font-bold">About me</h2>
+    <div class="max-w-xl space-y-4" style="color: var(--muted);">
+      <p>I turn ideas into working websites. I care about clean layouts, readable code and pages that load quickly on any device, including slow mobile connections.</p>
+      <p>I work with small businesses, students and startups, and I like to keep things simple: a clear goal, honest timelines and regular updates.</p>
+      <div class="flex flex-wrap gap-2 pt-2">
+        <span class="rounded-md border px-3 py-1 text-sm" style="border-color: var(--line); background: var(--surface); color: var(--ink);">HTML &amp; CSS</span>
+        <span class="rounded-md border px-3 py-1 text-sm" style="border-color: var(--line); background: var(--surface); color: var(--ink);">Tailwind CSS</span>
+        <span class="rounded-md border px-3 py-1 text-sm" style="border-color: var(--line); background: var(--surface); color: var(--ink);">JavaScript</span>
+        <span class="rounded-md border px-3 py-1 text-sm" style="border-color: var(--line); background: var(--surface); color: var(--ink);">React</span>
+        <span class="rounded-md border px-3 py-1 text-sm" style="border-color: var(--line); background: var(--surface); color: var(--ink);">Node.js</span>
+        <span class="rounded-md border px-3 py-1 text-sm" style="border-color: var(--line); background: var(--surface); color: var(--ink);">Figma</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="border-t py-16" style="border-color: var(--line);">
+    <h2 class="display text-2xl font-bold">Selected work</h2>
+    <p class="mt-2" style="color: var(--muted);">A few recent projects. Replace these with your own.</p>
+
+    <ul class="mt-8 divide-y" style="border-color: var(--line);">
+      <li class="grid gap-2 py-6 sm:grid-cols-[1fr_2fr_auto] sm:gap-8" style="border-color: var(--line);">
+        <h3 class="display text-xl font-bold">Shop Manager</h3>
+        <p style="color: var(--muted);">A simple inventory and sales dashboard for a local retail shop, with daily reports and low-stock alerts.</p>
+        <p class="text-sm" style="color: var(--muted);">React, Node.js</p>
+      </li>
+      <li class="grid gap-2 py-6 sm:grid-cols-[1fr_2fr_auto] sm:gap-8" style="border-color: var(--line);">
+        <h3 class="display text-xl font-bold">Campus Notes</h3>
+        <p style="color: var(--muted);">A study-notes site where students share and search lecture summaries, built to work well on mobile.</p>
+        <p class="text-sm" style="color: var(--muted);">Tailwind CSS, JavaScript</p>
+      </li>
+      <li class="grid gap-2 py-6 sm:grid-cols-[1fr_2fr_auto] sm:gap-8" style="border-color: var(--line);">
+        <h3 class="display text-xl font-bold">Rajshahi Mango Co.</h3>
+        <p style="color: var(--muted);">A landing page and order form for a seasonal fruit business, with fast loading and clear pricing.</p>
+        <p class="text-sm" style="color: var(--muted);">HTML, Tailwind CSS</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="border-t py-16 pb-24" style="border-color: var(--line);">
+    <h2 class="display text-3xl font-bold sm:text-4xl">Have a project in mind?</h2>
+    <p class="mt-3 max-w-lg" style="color: var(--muted);">Send me a short message about what you need. I usually reply within a day.</p>
+    <a href="mailto:hello@example.com" class="display mt-6 inline-block break-all text-2xl font-bold underline decoration-2 underline-offset-8 sm:text-3xl" style="color: var(--accent);">hello@example.com</a>
+    <div class="mt-8 flex gap-6 text-sm" style="color: var(--muted);">
+      <a href="#" class="hover:text-[var(--ink)]">GitHub</a>
+      <a href="#" class="hover:text-[var(--ink)]">LinkedIn</a>
+      <a href="#" class="hover:text-[var(--ink)]">Facebook</a>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t py-6 text-center text-sm" style="border-color: var(--line); color: var(--muted);">
+  © <span id="year">2026</span> Md. Zakir Hossain. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var btn = document.getElementById('theme');
+  btn.addEventListener('click', function () {
+    var root = document.documentElement;
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    root.setAttribute('data-theme', dark ? 'light' : 'dark');
+  });
+</script>
+</body>
+</html>
